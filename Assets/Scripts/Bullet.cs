@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour
 {
 
     public bool hasBeenFired = false;
+    [SerializeField]
+    private int damage_amount = 30; 
     private Rigidbody2D rb; 
     public float fireForce = 3; 
     // Start is called before the first frame update
@@ -40,5 +42,10 @@ public class Bullet : MonoBehaviour
     {
         Debug.Log("collided");
         Destroy(this.gameObject);
+    }
+
+    public int GetDamageAmount()
+    {
+        return damage_amount; 
     }
 }
