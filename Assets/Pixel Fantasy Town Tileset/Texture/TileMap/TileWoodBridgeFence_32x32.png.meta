@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: 52cf035fdc21e5f44bf8ba43892714bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: TileWoodBridgeFence_32x32_0
+  - first:
+      213: 21300002
+    second: TileWoodBridgeFence_32x32_1
+  - first:
+      213: 21300004
+    second: TileWoodBridgeFence_32x32_2
+  - first:
+      213: 21300006
+    second: TileWoodBridgeFence_32x32_3
+  - first:
+      213: 21300008
+    second: TileWoodBridgeFence_32x32_4
+  - first:
+      213: 21300010
+    second: TileWoodBridgeFence_32x32_5
+  - first:
+      213: 21300012
+    second: TileWoodBridgeFence_32x32_6
+  - first:
+      213: 21300014
+    second: TileWoodBridgeFence_32x32_7
+  - first:
+      213: 21300016
+    second: TileWoodBridgeFence_32x32_8
+  - first:
+      213: 21300018
+    second: TileWoodBridgeFence_32x32_9
+  - first:
+      213: 21300020
+    second: TileWoodBridgeFence_32x32_10
+  - first:
+      213: 21300022
+    second: TileWoodBridgeFence_32x32_11
+  - first:
+      213: 21300024
+    second: TileWoodBridgeFence_32x32_12
+  - first:
+      213: 21300026
+    second: TileWoodBridgeFence_32x32_13
+  - first:
+      213: 21300028
+    second: TileWoodBridgeFence_32x32_14
+  - first:
+      213: 21300030
+    second: TileWoodBridgeFence_32x32_15
+  - first:
+      213: 21300032
+    second: TileWoodBridgeFence_32x32_16
+  - first:
+      213: 21300034
+    second: TileWoodBridgeFence_32x32_17
+  - first:
+      213: 21300036
+    second: TileWoodBridgeFence_32x32_18
+  - first:
+      213: 21300038
+    second: TileWoodBridgeFence_32x32_19
+  - first:
+      213: 21300040
+    second: TileWoodBridgeFence_32x32_20
+  - first:
+      213: 21300042
+    second: TileWoodBridgeFence_32x32_21
+  - first:
+      213: 21300044
+    second: TileWoodBridgeFence_32x32_22
+  - first:
+      213: 21300046
+    second: TileWoodBridgeFence_32x32_23
+  - first:
+      213: 21300048
+    second: TileWoodBridgeFence_32x32_24
+  - first:
+      213: 21300050
+    second: TileWoodBridgeFence_32x32_25
+  - first:
+      213: 21300052
+    second: TileWoodBridgeFence_32x32_26
+  - first:
+      213: 21300054
+    second: TileWoodBridgeFence_32x32_27
+  - first:
+      213: 21300056
+    second: TileWoodBridgeFence_32x32_28
+  - first:
+      213: 21300058
+    second: TileWoodBridgeFence_32x32_29
+  - first:
+      213: 21300060
+    second: TileWoodBridgeFence_32x32_30
+  - first:
+      213: 21300062
+    second: TileWoodBridgeFence_32x32_31
+  - first:
+      213: 21300064
+    second: TileWoodBridgeFence_32x32_32
+  - first:
+      213: 21300066
+    second: TileWoodBridgeFence_32x32_33
+  - first:
+      213: 21300068
+    second: TileWoodBridgeFence_32x32_34
+  - first:
+      213: 21300070
+    second: TileWoodBridgeFence_32x32_35
+  - first:
+      213: 21300072
+    second: TileWoodBridgeFence_32x32_36
+  - first:
+      213: 21300074
+    second: TileWoodBridgeFence_32x32_37
+  - first:
+      213: 21300076
+    second: TileWoodBridgeFence_32x32_38
+  - first:
+      213: 21300078
+    second: TileWoodBridgeFence_32x32_39
+  - first:
+      213: 21300080
+    second: TileWoodBridgeFence_32x32_40
+  - first:
+      213: 21300082
+    second: TileWoodBridgeFence_32x32_41
+  - first:
+      213: 21300084
+    second: TileWoodBridgeFence_32x32_42
+  - first:
+      213: 21300086
+    second: TileWoodBridgeFence_32x32_43
+  - first:
+      213: 21300088
+    second: TileWoodBridgeFence_32x32_44
+  - first:
+      213: 21300090
+    second: TileWoodBridgeFence_32x32_45
+  - first:
+      213: 21300092
+    second: TileWoodBridgeFence_32x32_46
+  - first:
+      213: 21300094
+    second: TileWoodBridgeFence_32x32_47
+  - first:
+      213: 21300096
+    second: TileWoodBridgeFence_32x32_48
+  - first:
+      213: 21300098
+    second: TileWoodBridgeFence_32x32_49
+  - first:
+      213: 21300100
+    second: TileWoodBridgeFence_32x32_50
+  - first:
+      213: 21300102
+    second: TileWoodBridgeFence_32x32_51
+  - first:
+      213: 21300104
+    second: TileWoodBridgeFence_32x32_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab7a6aca52b4a844aa536d19741b27e
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaaccb390d2f8b469d1c9555811a329
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba32435dab50c6642b0399fb73233c5c
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12f3f16d7a189e448a5c80e26d7cbae
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26adf74b951fd943bbe94830589a35d
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be6a59d23ae74e448959bd21dbecf7a
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bdc93c960468549906af68832806f6
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c8d14a844f7884490109bb5608ed75
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8342fa29892440546b1fecc7c359b660
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99138a81781edf42886d6542081bc38
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb088b89b83670e4190da91b5198327a
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dcbe7bc1de41f4d92ac2f92efff58d
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f2f6896a7e841489d462b511d4cf3c
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c79a7f743ca3145860cec7d6cb2b72
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d4ab63c369d494aa7f4310e766c53b
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36814f7148116a54a81537e55df5d134
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9182ef708233d42aefce3f65b91f29
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa382ad830564bd45b22c5c3d5fbb3d7
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51568b14322f024498a39e70c3e86ff3
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbe76256719c204d98d4b5bd27647a6
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cdcfa4e58d7464cad416e7960d283e
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe97c39a7dbb6b41a2f9f412fabcf7b
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.75, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861a5222aed96404791546c58b7cb3f1
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileWoodBridgeFence_32x32_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3a4d9e725c3d34cbec8eb248deaf8f
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7fa70efdbc6c0464c8c5dcb67ef5eac2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
