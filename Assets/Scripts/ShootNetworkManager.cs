@@ -18,10 +18,7 @@ public class ShootNetworkManager : NetworkManager
 
     public override void OnStartClient()
     {
-        foreach (NetworkIdentity c in con.clientOwnedObjects)
-        {
-            Debug.Log(c.gameObject.tag + " " + c.netId);
-        }
+
     }
 
     public override void OnClientDisconnect(NetworkConnection conn)

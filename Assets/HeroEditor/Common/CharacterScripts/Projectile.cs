@@ -17,8 +17,10 @@ namespace Assets.HeroEditor.Common.CharacterScripts
         private float _catchUpDistance;
         public FirearmFire weapon;
         private float speedy = 0f;
+        private int damage_amount = 30;
 
-		public void Start()
+
+        public void Start()
         {
             Destroy(gameObject, 5);
             Rigidbody = GetComponent<Rigidbody2D>();
@@ -65,7 +67,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
                 if (c != null && playerShooting.netId != c.netId)
                 {
                     Bang(collision.gameObject);
-                    c.TakeDamage(Mathf.Sign(Rigidbody.velocity.x));
+                    c.TakeDamage(Mathf.Sign(Rigidbody.velocity.x), damage_amount);
                     Debug.Log("hell ye");
                 }
                 else

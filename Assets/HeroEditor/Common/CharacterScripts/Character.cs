@@ -21,11 +21,19 @@ namespace Assets.HeroEditor.Common.CharacterScripts
         public MeleeWeapon MeleeWeapon;
         public Firearm Firearm;
         public BowShooting BowShooting;
-		
 
-	    [Header("Service")]
+		[SerializeField]
+		private int health = 100;
+
+		[SerializeField]
+		private float respawn_max_time = 3f;
+		private float current_respawn_time = 3f;
+		private bool respawning = false;
+
+		[Header("Service")]
 		public LayerManager LayerManager;
 
+		public GameObject viewCamera; 
         public Vector2 BodyScale
 	    {
 		    get { return BodyRenderers.Single(i => i.name == "Torso").transform.localScale; }
@@ -49,6 +57,9 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 		{
 			Debug.Log(netId);
 			player_rb = GetComponent<Rigidbody2D>();
+			viewCamera = GameObject.FindGameObjectWithTag("MainCamera");
+			current_respawn_time = respawn_max_time;
+
 		}
 
 		private void FixedUpdate()
@@ -64,16 +75,65 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 
         private void Update()
         {
-            if(movementVector.x == 0 && movementVector.y == 0)
-            {
-				Animator.SetBool("Walk", false);
-            }
-            else
-            {
-				Animator.SetBool("Walk", true);
+			if (hasAuthority)
+			{
+				if (movementVector.x == 0 && movementVector.y == 0)
+				{
+					Animator.SetBool("Walk", false);
+				}
+				else
+				{
+					Animator.SetBool("Walk", true);
 
 
+				}
+				camFollow();
 			}
+
+			if (health <= 0)
+			{
+				Die();
+			}
+
+			if (respawning)
+			{
+				Respawn();
+			}
+
+		}
+
+		private void Die()
+		{
+			Debug.Log("Ded");
+			Transform allChildren = GetComponentInChildren<Transform>();
+			foreach (Transform child in allChildren)
+			{
+				child.gameObject.SetActive(false);
+			}
+			respawning = true;
+		}
+
+		private void Respawn()
+		{
+			// Set transform position to spawn point
+			if (current_respawn_time <= 0)
+			{
+				Transform allChildren = GetComponentInChildren<Transform>();
+				foreach (Transform child in allChildren)
+				{
+					child.gameObject.SetActive(true);
+				}
+				respawning = false;
+				current_respawn_time = respawn_max_time;
+				health = 100;
+			}
+			else
+			{
+				Debug.Log(current_respawn_time);
+				current_respawn_time -= Time.deltaTime;
+			}
+
+			gameObject.SetActive(true);
 		}
 
 		private void OnTriggerEnter2D(Collider2D collision)
@@ -88,10 +148,21 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 			}
 		}
 
-		public void TakeDamage(float direction)
+		private void camFollow()
+		{
+			float charPosX = transform.position.x;
+			float charPosY = transform.position.y;
+			float cameraOffset = 18.0f;
+
+			viewCamera.transform.position = new Vector3(charPosX, charPosY, viewCamera.transform.position.z);
+		}
+
+		public void TakeDamage(float direction, int dmgAmount)
         {
 			Debug.Log(direction + " " + gameObject.tag);
 			gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * direction * 1.5f, ForceMode2D.Impulse);
+			health -= dmgAmount;
+			
         }
 
 
