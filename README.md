@@ -3,7 +3,9 @@
 # Description:
   - Our project is our take on a top down shooter where we attempted to create a game that was enjoyable for the average person stuck home during COVID. 
   - We created a fantasy map that is somewhat reminiscent of old pokemon games while adding a push to newer age with new looking character designs.
-
+# How to use:
+  - Build is located in assets simply click the build and the game will open
+  
 # Dependencies:
   - Our game uses Unity Hub 2.4.2 and Unity 2020.1.7f1
     - Both can be updated to newer versions of Unity however some items might become deprecated at that time
