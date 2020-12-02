@@ -22,7 +22,7 @@
     
 # Contributions and Updates:
   - Matthew Levine: Created Home Screen, Map and Game Transitions
-  - Dhruv Patel: Created Networking 
+  - Dhruv Patel: Created Networking, and Gameplay UI
   - Zaire Wilson: Created Gameplay, Characters, Camera Movement and Animation Manager 
 # Version:
   - 1.0
