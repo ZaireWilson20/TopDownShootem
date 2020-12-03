@@ -21,6 +21,8 @@ namespace Assets.HeroEditor.Common.CharacterScripts
     /// </summary>
     public partial class Character : NewCharacterBase
     {
+        public HealthBar healthbar;
+
         [Header("Weapons")]
         public MeleeWeapon MeleeWeapon;
         public Firearm Firearm;
@@ -29,6 +31,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 
 		[SerializeField]
 		private int health = 100;
+        private int maxAmmo = 200;
 
 		[SerializeField]
 		private float respawn_max_time = 3f;
@@ -49,8 +52,9 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 		    get { return BodyRenderers.Single(i => i.name == "Torso").transform.localScale; }
 		    set { FindObjectOfType<CharacterBodySculptor>().OnCharacterLoaded(value); }
 	    }
+     
 
-		[SerializeField]
+        [SerializeField]
 		private float speed_scale = 3f; 
 
 		[SerializeField]

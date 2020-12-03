@@ -1084,6 +1084,7 @@ MonoBehaviour:
   Shield: {fileID: 0}
   Bow: []
   Earrings: {fileID: 0}
+  healthbar: {fileID: 0}
   MeleeWeapon: {fileID: 1209133044110548667}
   Firearm: {fileID: 1209168855511323899}
   BowShooting: {fileID: 0}

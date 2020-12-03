@@ -12,14 +12,14 @@ public class Player : MonoBehaviour
 
     private float currentZRot = 0;
 
-    private float knockBackAmount = 2; 
-
+    private float knockBackAmount = 2;
+    public int ammo;
+    public int magAmmo = 200;
     // Start is called before the first frame update
     void Start()
     {
+        ammo = 50;
         player_rb = GetComponent<Rigidbody2D>();
-
-
     }
 
     // Update is called once per frame
@@ -27,7 +27,19 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            ShootBullet();
+            if(ammo > 0)
+            { 
+                ShootBullet();
+                ammo -= 1;
+            }
+            else
+            {
+                if (magAmmo > 0)
+                {
+                    ammo += 50;
+                    magAmmo -= 50;
+                }
+            }
         }
     }
 
