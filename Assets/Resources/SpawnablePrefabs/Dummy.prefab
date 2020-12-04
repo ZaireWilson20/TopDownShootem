@@ -1087,7 +1087,12 @@ MonoBehaviour:
   healthbar: {fileID: 0}
   MeleeWeapon: {fileID: 1209133044110548667}
   Firearm: {fileID: 1209168855511323899}
+<<<<<<< HEAD:Assets/Resources/SpawnablePrefabs/Dummy.prefab
   BowShooting: {fileID: 0}
+=======
+  BowShooting: {fileID: 1208386635694983623}
+  ammo: {fileID: 0}
+>>>>>>> 8f02b57a4eb49cd56e4dba60790378d77358a534:Assets/Prefabs/Dummy.prefab
   health: 100
   respawn_max_time: 3
   LayerManager: {fileID: 1208981521912462639}

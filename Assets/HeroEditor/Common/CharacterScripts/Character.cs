@@ -21,16 +21,26 @@ namespace Assets.HeroEditor.Common.CharacterScripts
     /// </summary>
     public partial class Character : NewCharacterBase
     {
+        public HealthBar healthbar;
+        //healthbar = GameObject.Find("HealthBar");
+
         [Header("Weapons")]
         public MeleeWeapon MeleeWeapon;
         public Firearm Firearm;
         public BowShooting BowShooting;
         public Ammo ammo;
+<<<<<<< HEAD
 
 
 		[SerializeField]
 		public int health = 100;
         public int maxAmmo = 200;
+=======
+
+        [SerializeField]
+		private int health = 100;
+        private int maxAmmo = 200;
+>>>>>>> 8f02b57a4eb49cd56e4dba60790378d77358a534
 
 		[SerializeField]
 		private float respawn_max_time = 3f;
@@ -86,6 +96,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 			player_rb = GetComponent<Rigidbody2D>();
 			viewCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			current_respawn_time = respawn_max_time;
+<<<<<<< HEAD
 			SetDisplayName(); 
 
 			
@@ -109,6 +120,10 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 
 			}
 		}
+=======
+            healthbar.SetMaxHealth(health);
+        }
+>>>>>>> 8f02b57a4eb49cd56e4dba60790378d77358a534
 
 		private void HandleKillChange(int oldVal, int newVal)
         {
