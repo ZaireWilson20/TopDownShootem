@@ -2545,7 +2545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad49ff651aa9294c87ba42a898fbb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  mag: 0
+  ammo: 0
   ammoText: {fileID: 1949068831}
 --- !u!1001 &929139015
 PrefabInstance:
@@ -32007,6 +32008,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4af1fc467359970438867c4061d19eb9, type: 3}
+--- !u!224 &1721867012 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3880064796180880506, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+  m_PrefabInstance: {fileID: 2071074762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1721867013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1066033571166006669, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+  m_PrefabInstance: {fileID: 2071074762}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1724711868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32956,6 +32973,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1639236260}
     m_Modifications:
+    - target: {fileID: 410584689826914318, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+      propertyPath: fill
+      value: 
+      objectReference: {fileID: 1721867013}
     - target: {fileID: 1383120319193649215, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -33052,9 +33073,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3880064796180880506, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880064796180880506, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4662188452649377281, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
       propertyPath: m_Name
       value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5458649946773093798, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+      propertyPath: m_FillRect
+      value: 
+      objectReference: {fileID: 1721867012}
+    - target: {fileID: 5458649946773093798, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
+      propertyPath: m_Value
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8114501451816923159, guid: 19c876de91e5c8742a7f65979bd8b049, type: 3}
       propertyPath: m_RenderMode

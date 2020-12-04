@@ -22,11 +22,13 @@ namespace Assets.HeroEditor.Common.CharacterScripts
     public partial class Character : NewCharacterBase
     {
         public HealthBar healthbar;
+        //healthbar = GameObject.Find("HealthBar");
 
         [Header("Weapons")]
         public MeleeWeapon MeleeWeapon;
         public Firearm Firearm;
         public BowShooting BowShooting;
+        public Ammo ammo;
 
 
 		[SerializeField]

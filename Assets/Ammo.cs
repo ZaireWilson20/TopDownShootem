@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class Ammo : MonoBehaviour
 {
-    public Player player;
+    public int mag;
+    public int ammo;
     public Text ammoText;
 
     // Update is called once per frame
-    void Update()
+    void Shoot()
     {
-        //Debug.Log("Ammo:",player.ammo.ToString());
-        ammoText.text = player.ammo.ToString();
+
     }
 }
