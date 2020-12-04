@@ -8,10 +8,12 @@ Our game has core features that are needed to work, they are:
   * Movement
   
   ![Video of Movement]
+  
   (https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/Movement.mp4)
   * Shooting
   
   ![Video of Shooting]
+  
   (https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/Shooting.mp4)
   * UI
   
