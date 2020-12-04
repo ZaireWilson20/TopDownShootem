@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Ammo : MonoBehaviour
+namespace Assets.HeroEditor.Common.CharacterScripts
 {
-    public int mag;
-    public int ammo;
-    public Text ammoText;
-
-    // Update is called once per frame
-    void Shoot()
+    public class Ammo : MonoBehaviour
     {
+        public Character dummy;
+        public int mag;
+        public int ammo;
+        public Text ammoText;
 
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

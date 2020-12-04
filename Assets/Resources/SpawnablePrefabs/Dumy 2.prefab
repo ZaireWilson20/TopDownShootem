@@ -1226,12 +1226,27 @@ MonoBehaviour:
   MeleeWeapon: {fileID: 114828452318573608}
   Firearm: {fileID: 114722409480519272}
   BowShooting: {fileID: 114079797550179156}
+  ammo: {fileID: 0}
   health: 100
+  maxAmmo: 200
   respawn_max_time: 3
+  respawning: 0
   LayerManager: {fileID: 114680778405795772}
   viewCamera: {fileID: 0}
+  displayName: 
   speed_scale: 3
   player_rb: {fileID: 0}
+  netMan: {fileID: 0}
+  name_text:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  kills_text:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114002693924317210
 MonoBehaviour:
   m_ObjectHideFlags: 0

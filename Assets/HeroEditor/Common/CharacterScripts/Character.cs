@@ -21,9 +21,6 @@ namespace Assets.HeroEditor.Common.CharacterScripts
     /// </summary>
     public partial class Character : NewCharacterBase
     {
-        public HealthBar healthbar;
-        //healthbar = GameObject.Find("HealthBar");
-
         [Header("Weapons")]
         public MeleeWeapon MeleeWeapon;
         public Firearm Firearm;
@@ -32,8 +29,8 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 
 
 		[SerializeField]
-		private int health = 100;
-        private int maxAmmo = 200;
+		public int health = 100;
+        public int maxAmmo = 200;
 
 		[SerializeField]
 		private float respawn_max_time = 3f;
@@ -250,7 +247,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 			Debug.Log(direction + " " + gameObject.tag);
 			gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right * direction * 1.5f, ForceMode2D.Impulse);
 			health -= dmgAmount;
-			
+            Debug.Log("Player's Health: " + health);
         }
 
 		public int GetHealth()
