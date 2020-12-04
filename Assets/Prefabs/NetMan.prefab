@@ -58,13 +58,17 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 1248771360380261629, guid: b9933d0311792474890caa9801feb105, type: 3}
+  playerPrefab: {fileID: 8645682088360907142, guid: c433178c40dab004da35c108a7088f79, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs:
   - {fileID: 1074319443444484, guid: 2d00732857908ac4e8aea0dfe50fb987, type: 3}
   - {fileID: 3532651874052040972, guid: 344d8de9a2f03c540b5c4915852fbc96, type: 3}
   - {fileID: 1645815396139469859, guid: 486df061f959bb44c9249bac68e908e4, type: 3}
+  roomPlayerPref: {fileID: 0}
+  menuScene: 
+  minPlayers: 2
+  roomPlayers: []
 --- !u!114 &9212753849787974043
 MonoBehaviour:
   m_ObjectHideFlags: 0

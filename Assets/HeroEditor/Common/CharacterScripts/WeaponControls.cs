@@ -20,6 +20,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 
         public void Update()
         {
+            
             _locked = !Character.Animator.GetBool("Ready") || Character.Animator.GetInteger("Dead") > 0;
 
             if (_locked) return;
@@ -79,7 +80,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
                     return;
             }
 
-            if (isLocalPlayer)
+            if (hasAuthority)
             {
                 RotateArm(arm, weapon, FixHorizontal ? arm.position + 1000 * Vector3.right : Camera.main.ScreenToWorldPoint(Input.mousePosition), -40, 40);
             }

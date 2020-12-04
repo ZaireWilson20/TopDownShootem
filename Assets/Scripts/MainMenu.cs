@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-  public void PlayGame()
-  {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-  }
+    [SerializeField] private ShootNetworkManager networkManager = null;
+    [SerializeField] private GameObject landingPage = null; 
 
-  public void QuitGame()
-  {
-    Application.Quit();
-  }
+    public void HostLobby()
+    {
+        networkManager.StartHost();
+        landingPage.SetActive(false);
+
+    }
 }

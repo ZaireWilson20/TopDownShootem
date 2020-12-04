@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.HeroEditor.Common.CommonScripts.Springs;
@@ -7,8 +8,11 @@ using Assets.HeroEditor.Common.EditorScripts;
 using Assets.HeroEditor.Common.Enums;
 using HeroEditor.Common;
 using HeroEditor.Common.Enums;
+using Random = UnityEngine.Random;
 using UnityEngine;
 using Mirror;
+using TMPro; 
+
 
 namespace Assets.HeroEditor.Common.CharacterScripts
 {
@@ -22,18 +26,24 @@ namespace Assets.HeroEditor.Common.CharacterScripts
         public Firearm Firearm;
         public BowShooting BowShooting;
 
+
 		[SerializeField]
 		private int health = 100;
 
 		[SerializeField]
 		private float respawn_max_time = 3f;
 		private float current_respawn_time = 3f;
-		private bool respawning = false;
+		public bool respawning = false;
+		[SyncVar(hook = nameof(HandleKillChange))] private int kills = 0;
+		private int playerNum = 0; 
 
 		[Header("Service")]
 		public LayerManager LayerManager;
 
 		public GameObject viewCamera; 
+		[SerializeField] private string displayName;
+
+		private GamePlayer[] allPlayers; 
         public Vector2 BodyScale
 	    {
 		    get { return BodyRenderers.Single(i => i.name == "Torso").transform.localScale; }
@@ -46,12 +56,26 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 		[SerializeField]
 		Rigidbody2D player_rb;
 		private Vector2 movementVector;
-		//NetworkIdentity netId; 
+
+		[SerializeField] private ShootNetworkManager netMan = null;
+		[SerializeField] private TMP_Text[] name_text = new TMP_Text[4];
+
 		
+		[SerializeField] private TMP_Text[] kills_text = new TMP_Text[4];
+		//NetworkIdentity netId; 
 
 
 
 
+		private ShootNetworkManager room;
+		private ShootNetworkManager Room
+		{
+			get
+			{
+				if (room != null) { return room; }
+				return room = NetworkManager.singleton as ShootNetworkManager;
+			}
+		}
 
 		void Start()
 		{
@@ -59,9 +83,43 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 			player_rb = GetComponent<Rigidbody2D>();
 			viewCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			current_respawn_time = respawn_max_time;
+			SetDisplayName(); 
 
+			
 		}
 
+		
+		private void SetDisplayName()
+        {
+			allPlayers = FindObjectsOfType<GamePlayer>();
+			foreach(GamePlayer p in allPlayers)
+            {
+                if (p.hasAuthority && hasAuthority)
+                {
+					displayName = p.GetDisplayName();
+					playerNum = p.playerNum;
+					 
+					
+                }
+				p.kills = kills;
+				name_text[playerNum].text = p.GetDisplayName();
+
+			}
+		}
+
+		private void HandleKillChange(int oldVal, int newVal)
+        {
+
+			if (hasAuthority)
+			{
+				for (int i = 0; i < Room.gamePlayers.Count; i++)
+				{
+
+					kills_text[i].text = room.gamePlayers[i].kills.ToString();
+
+				}
+			}
+		}
 		private void FixedUpdate()
 		{
 			if (hasAuthority)
@@ -105,27 +163,51 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 		private void Die()
 		{
 			Debug.Log("Ded");
+
+			SpriteRenderer[] children = GetComponentsInChildren<SpriteRenderer>();
+			Color newColor;
+			foreach (SpriteRenderer child in children)
+			{
+				newColor = child.color;
+				newColor.a = 0;
+				child.color = newColor;
+			}
+			/*
 			Transform allChildren = GetComponentInChildren<Transform>();
 			foreach (Transform child in allChildren)
 			{
 				child.gameObject.SetActive(false);
-			}
+			}*/
 			respawning = true;
 		}
 
 		private void Respawn()
 		{
+			//gameObject.SetActive(true);
+			Debug.Log("Respwan has authority? : " + hasAuthority);
 			// Set transform position to spawn point
 			if (current_respawn_time <= 0)
 			{
+
+				SpriteRenderer[] children = GetComponentsInChildren<SpriteRenderer>();
+				Color newColor;
+				foreach (SpriteRenderer child in children)
+				{
+					newColor = child.color;
+					newColor.a = 1;
+					child.color = newColor;
+				}
+				/*
 				Transform allChildren = GetComponentInChildren<Transform>();
 				foreach (Transform child in allChildren)
 				{
 					child.gameObject.SetActive(true);
-				}
+				}*/
 				respawning = false;
 				current_respawn_time = respawn_max_time;
 				health = 100;
+				transform.position = PlayerSpawn.spawnPoints[Random.Range(0, PlayerSpawn.spawnPoints.Count)].gameObject.transform.position;
+				
 			}
 			else
 			{
@@ -133,7 +215,7 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 				current_respawn_time -= Time.deltaTime;
 			}
 
-			gameObject.SetActive(true);
+			
 		}
 
 		private void OnTriggerEnter2D(Collider2D collision)
@@ -165,6 +247,19 @@ namespace Assets.HeroEditor.Common.CharacterScripts
 			
         }
 
+		public int GetHealth()
+        {
+			return health; 
+        }
+
+		[Command]
+		public void CMDUpdateKillCount()
+        {
+
+			kills++;
+			Room.gamePlayers[playerNum].kills = kills; 
+
+        }
 
 		/// <summary>
 		/// Called automatically when something was changed.

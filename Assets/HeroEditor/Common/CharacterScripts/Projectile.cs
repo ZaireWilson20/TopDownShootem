@@ -68,7 +68,10 @@ namespace Assets.HeroEditor.Common.CharacterScripts
                 {
                     Bang(collision.gameObject);
                     c.TakeDamage(Mathf.Sign(Rigidbody.velocity.x), damage_amount);
-                    Debug.Log("hell ye");
+                    if(c.GetHealth() <= 0 && !c.respawning)
+                    {
+                        playerShooting.CMDUpdateKillCount(); 
+                    }
                 }
                 else
                 {
