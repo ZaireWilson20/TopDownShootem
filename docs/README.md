@@ -7,18 +7,18 @@ Recess Rumble is designed to be a top-down shooter that incorporates tactical sh
 Our game has core features that are needed to work, they are:
   * Movement
   
-  ![Video of Movement](https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/movement.gif)
+  ![Video of Movement](movement.gif)
   * Shooting
   
-  ![Video of Shooting](https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/shooting.gif)
+  ![Video of Shooting](shooting.gif)
   * UI
   
-  ![Image of UI](https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/UI.png)
+  ![Image of UI](UI.png)
   
-  ![Image of UI2](https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/UI%202.png)
+  ![Image of UI2](UI%202.png)
   * Respawning
   
-  ![Video of Respawn](https://github.com/ZaireWilson20/TopDownShootem/blob/main/docs/respawn.gif)
+  ![Video of Respawn](respawn.gif)
   * Networking
 
 # Updates
