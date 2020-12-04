@@ -27,4 +27,4 @@
 # Version:
   - 1.0
 # Future Versions:
-  - Future Vvrsions will include proper UI for players allowing for better interactions while playing
+  - Future Versions will include proper UI for players allowing for better interactions while playing
